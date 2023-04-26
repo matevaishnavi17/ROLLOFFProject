@@ -1,0 +1,144 @@
+<div class="">
+    <div class="">
+        <h2 style="color: black;">Employee Details</h2>
+    </div>
+</div>
+<br><br><br>
+<div class="container">
+    <!-- <div class="row top-row">
+        <div class="col-xs-12 row end-xs">
+            <button type="button" class="btn btn-info" routerLink="/app-employees" style="width:fit-content; height: fit-content;">
+                Go Back</button>
+           
+        </div>
+
+    </div> -->
+<br>
+    <!-- <div class="container-tab mat-elevation-z8">
+        <div class="row-base">
+           <div class="col">
+            
+                <tr>
+                <td class="sp"><mat-lable>Globle Group ID :</mat-lable></td><td>{{employee.globalGroupID}}</td>
+                <td class="sp"><mat-lable>Employee No :</mat-lable></td><td>{{employee.employeeNo}}</td>
+                </tr>
+
+                <tr>
+                <td class="sp"><mat-lable>Name :</mat-lable></td><td>{{employee.name}}</td>
+                <td class="sp"><mat-lable>Glocal Grade :</mat-lable></td><td>{{employee.localGrade}}</td>
+                </tr>
+           
+                <tr>
+                <td class="sp"><mat-lable>Main Client :</mat-lable></td><td>{{employee.mainClient}}</td>
+                <td class="sp"><mat-lable>Email :</mat-lable></td><td>{{employee.email}}</td>
+                </tr>
+                
+                <tr>
+                <td class="sp"><mat-lable>Joining Date :</mat-lable></td><td>{{employee.joiningDate}}</td>
+                <td class="sp"><mat-lable>Project Code :</mat-lable></td><td>{{employee.projectCode}}</td>
+                </tr>
+
+                <tr>
+                <td class="sp"><mat-lable>Project Name :</mat-lable></td><td>{{employee.projectName}}</td>
+                <td class="sp"><mat-lable>Project Start Date :</mat-lable></td><td>{{employee.projectStartDate}}</td>
+                </tr>
+
+                    <tr>
+                    <td class="sp"><mat-lable>Project End Date:</mat-lable></td><td>{{employee.projectEndDate}}</td>
+                    <td class="sp"><mat-lable>People Manager:</mat-lable></td><td>{{employee.peopleManager}}</td>
+                    </tr>
+
+                    <tr>
+                    <td class="sp"><mat-lable>Practice :</mat-lable></td><td>{{employee.practice}}</td>
+                    <td class="sp"><mat-lable>PSP Name :</mat-lable></td><td>{{employee.pspName}}</td>
+                    </tr>
+
+                    <tr>
+                    <td class="sp"><mat-lable>New Global Practice :</mat-lable></td><td>{{employee.newGlobalPractice}}</td>
+                    <td class="sp"><mat-lable>Office City :</mat-lable></td><td>{{employee.officeCity}}</td>
+                    </tr>
+                    <tr>
+                    <td class="sp"><mat-lable>Country :</mat-lable></td><td>{{employee.country}}</td></tr>
+
+        </div>
+    </div> -->
+
+<table class="container-fluid col-3">
+    <tbody>
+    <tr >
+        <td style="font-weight: bold;">Globle Group ID :</td>
+        <td>{{employee.globalGroupID}}</td>
+        <td style="font-weight: bold;">Employee No :</td>
+        <td>{{employee.employeeNo}}</td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold;">Name :</td>
+        <td>{{employee.name}}</td>
+        <td style="font-weight: bold;">Glocal Grade :</td>
+        <td>{{employee.localGrade}}</td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold;"> Main Client :</td>
+        <td>{{employee.mainClient}}</td>
+        <td style="font-weight: bold;">Email :</td>
+        <td>{{employee.email}}</td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold;">Joining Date :</td>
+        <td>{{employee.joiningDate}}</td>
+        <td style="font-weight: bold;">Project Code :</td>
+        <td>{{employee.projectCode}}</td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold;">Project Name :</td>
+        <td>{{employee.projectName}}</td>
+        <td style="font-weight: bold;">Project Start Date :</td>
+        <td>{{employee.projectStartDate}}</td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold;">Project End Date:</td>
+        <td>{{employee.projectEndDate}}</td>
+        <td style="font-weight: bold;">People Manager:</td>
+        <td>{{employee.peopleManager}}</td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold;">Practice :</td>
+        <td>{{employee.practice}}</td>
+        <td style="font-weight: bold;">PSP Name :</td>
+        <td>{{employee.pspName}}</td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold;">New Global Practice :</td>
+        <td>{{employee.newGlobalPractice}}</td>
+        <td style="font-weight: bold;">Office City :</td>
+        <td>{{employee.officeCity}}</td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold;">Country :</td>
+        <td>{{employee.country}}</td>
+    </tr>
+</tbody>
+
+
+</table> <br>
+<div class="row d-flex justify-content-center align-content-center">
+    <div class="col-3 d-flex justify-content-end">
+    <!-- <div class="col-xs-12 row end-xs"> -->
+        <!-- <a routerLink="/app-employees" color="accent" mat-raised-button><mat-icon>add_box</mat-icon>Roll Off</a> -->
+        <button type="button" class="btn btn-info" [routerLink]="['/app-feedback-form',employee.globalGroupID]" >RollOff</button>
+    </div>
+    <div class="col-3">
+        <button type="button" class="btn btn-info" routerLink="/app-employees" style="width:fit-content; height: fit-content;">
+            Go Back</button>
+    </div>
+</div>
+
+
+
+    
+       
+</div>
+
+        
+    
+   

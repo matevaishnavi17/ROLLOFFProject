@@ -1,0 +1,104 @@
+<div class="page-header">
+    <div class="container">
+        <h1>Employee Information</h1>
+    </div>
+
+</div>
+
+
+<div class="container">
+  <div class="row end-xs mt-1">
+    <div class="col-xs-12">
+      <input type="text" class="search-input" placeholder="Search Employee" [(ngModel)]="filterString" 
+      (keyup)="filterEmployees()">
+    </div>
+
+  </div>
+
+
+  <div class="mt-1 mat-elevation-z8">
+         <table mat-table [dataSource]="dataSource" class="">
+
+          <!-- Note that these columns can be defined in any order.
+                  The actual rendered columns are set as a property on the row definition"  -->
+          
+             <!-- globalGroupID Column  -->
+            <ng-container matColumnDef="globalGroupID">
+              <th mat-header-cell *matHeaderCellDef> Global Group ID </th>
+              <td mat-cell *matCellDef="let element"> {{element.globalGroupID}} </td>
+            </ng-container>
+          
+            <!-- employeeNo Column  -->
+            <ng-container matColumnDef="employeeNo">
+              <th mat-header-cell *matHeaderCellDef> Employee No. </th>
+              <td mat-cell *matCellDef="let element"> {{element.employeeNo}} </td>
+            </ng-container>
+          
+            <!-- name Column  -->
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef> Name </th>
+              <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+          
+            <!-- localGrade Column  -->
+            <ng-container matColumnDef="localGrade">
+              <th mat-header-cell *matHeaderCellDef> localGrade </th>
+              <td mat-cell *matCellDef="let element"> {{element.localGrade}} </td>
+            </ng-container>
+
+
+               <!-- email Column  -->
+            <ng-container matColumnDef="email">
+                <th mat-header-cell *matHeaderCellDef> Email </th>
+                <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+              </ng-container>
+
+              <!-- Edit Column  -->
+            <ng-container matColumnDef="edit">
+              <th mat-header-cell *matHeaderCellDef>  </th>
+              <td mat-cell *matCellDef="let element"> 
+                <a [routerLink]="['/app-employees',element.globalGroupID]">
+                  <mat-icon style="color: #17a2b8;">edit</mat-icon>
+                </a> </td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table> 
+
+          <!-- <table class="table" [datasource]="datasource">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table> -->
+          <mat-paginator [length]="100"
+              [pageSize]="5"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              aria-label="Select page">
+          </mat-paginator>    
+    </div>
+</div>

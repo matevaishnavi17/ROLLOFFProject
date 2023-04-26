@@ -1,0 +1,22 @@
+.container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+form{
+    width: 500px;
+}
+/*.col{    width: 200px;}*/
+/* .form{
+    width:600px;}
+
+.form-level{
+         color:black;
+        }
+.btn{
+    background-color: deepskyblue;
+    font-weight: bolder;
+    color: white;
+} */

@@ -1,0 +1,345 @@
+    <!-- <div class="border border-dark my-5 mb-3 ">
+        <form [formGroup]="addForms" (ngSubmit)="SaveData()" >
+            <div class="form-group row align-items-center my-2">
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only">Global Group ID</label>
+                    <input type="number" class="form-control" placeholder="Global Group ID" name="globalGroupId" formControlName="globalGroupId" readonly>
+                </div>
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only">Name</label>
+                    <input [value]="employee.name" type="text" class="form-control" placeholder="Name" name="name" formControlName="name">
+                </div>
+                <div class="col-sm-3 my-1">
+                <label class="sr-only">Practice</label>
+                <input [value]="employee.practice" type="text" class="form-control" placeholder="Practice" name="practice" formControlName="practice">
+            </div>
+            <div class="col-sm-3 my-1">
+                <label class="sr-only">Performance Issue</label>
+                <select class="form-control" name="performanceIssue" formControllerName="performanceIssue">
+                    <option value="">--Select--</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                
+            </div>
+        </div>
+        <div class="form-group row align-items-center my-2">
+            <div class="col-sm-3 my-1">
+                <label class="sr-only">Local Grade</label>
+                <input [value]="employee.localGrade" type="text" class="form-control" placeholder="Local Grade" name="localGrade" formControlName="localGrade">
+            </div>
+            
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only">Resigned</label>
+                    <select class="form-control" name="resigned" formControllerName="resigned">
+                        <option value="">--Select--</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        </select>
+                        
+                    </div>
+                    <div class="col-sm-3 my-1">
+                        <label class="sr-only">Communication</label>
+                        <input type="text" class="form-control" placeholder="Communication" name="communication" formControlName="communication">
+                    </div>
+                </div>
+                <div class="form-group row align-items-center my-2">
+                    <div class="col-sm-3 my-1">
+                        <label class="sr-only">Primary Skills</label>
+                        <input type="text" class="form-control" placeholder="Primary Skill" name="primarySkill" formControlName="primarySkill">
+                    </div>
+                    <div class="col-sm-3 my-1">
+                        <label class="control-label">Reason for Roll Off</label>
+                        <select class="form-control" name="reasonForRollOff" formControllerName="reasonForRollOff">
+                            <option value="">--Select--</option>
+                            <option value="Project Closure">Project Closure</option>
+                            <option Value="Maternity Leave">Maternity Leave</option>
+                            <option Value="Resigned">Resigned</option>
+                            <option Value="Performance Issue">Performance Issue</option>
+                            <option Value="HR Case"> HR Case</option>
+                            <option Value="People Skill">People Skill</option>
+                            <option Value="Automation">Automation</option>
+                            <option Value="Quality"> Quality</option>
+                            <option Value="New Delivery Model">New Delivery Model</option>
+                            <option Value="Labour(Work Force Productivity)">Labour(Work Force Productivity)</option>
+                            <option Value="Client Budget Issue">Client Budget Issue</option>
+                            <option Value="Other Reason">Other Reason</option>
+                        </select>
+                       
+                    </div>
+                    <div class="col-sm-3 my-1">
+                        <label class="control-label">Under Probation</label>
+                        <select class="form-control" name="underProbation" formControllerName="underProbation">
+                            <option value="">--Select--</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                        
+                    </div>
+                    <div class="col-sm-3 my-1">
+                        <label class="sr-only">Role Competencies</label>
+                        <input type="text" class="form-control" placeholder="Role Competencies" name="roleCompetencies" formControlName="roleCompetencies">
+                    </div>
+                </div>
+                <div class="form-group row align-items-center my-2">
+                    <div class="col-sm-3 my-1">
+                        <label class="sr-only">Project Code</label>
+                        <input [value]="employee.projectCode" type="Number" class="form-control" placeholder="Project Code" name="projectCode" formControlName="projectCode">
+                    </div>
+                    <div class="col-sm-3 my-1">
+                        <label class="sr-only">Technical Skills</label>
+                        <input type="text" class="form-control" placeholder="Technical Skills" name="technicalSkills" formControlName="technicalSkills">
+                    </div>
+                    
+                    <div class="col-sm-3 my-1">
+                        <label class="control-label">Long Leave</label>
+                        <select class="form-control" name="longLeave" formControllerName="longLeave">
+                            <option value="">--Select--</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                        
+                    </div>
+                    <div class="col-sm-3 my-1">
+                        <label class="sr-only">Remarks</label>
+                        <input type="text" class="form-control" placeholder="Remarks" name="remarks" formControlName="remarks">
+                    </div>
+                </div>
+            <div class="form-group row align-items-center my-2">
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only">Project Name</label>
+                    <input type="text" class="form-control" placeholder="Project Name" name="projectName" formControlName="projectName">
+                </div>
+                <div class="col-sm-3 my-1">
+                    <label for="thisReleaseNeedsBackfillIsBackfilled" class="control-label">This Release Needs Backfilled</label>
+                    <select for="thisReleaseNeedsBackfillIsBackfilled" class="form-control" name="thisReleaseNeedsBackfillIsBackfilled" formControllerName="thisReleaseNeedsBackfillIsBackfilled">
+                        <option value="">--Select--</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    
+                </div>
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only">Relevant Experience in Years</label>
+                    <input type="Number" class="form-control" placeholder="Relevant Experience in Years" name="relevantExperienceYears" formControlName="relevantExperienceYears">
+                </div>
+                <div class="row ">
+                    <div class=" col-12 d-flex my-3 justify-content-center">
+                        <button type="submit" class="btn btn-info">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+</div> -->
+
+<!-- <p>feedback-form works!</p> -->
+<!--
+<app-top-nav></app-top-nav> -->
+<!-- <div class="container" style="margin: 0px;"> -->
+<!-- <div class="row top-row">
+  <div class="col-xs-12 row end-xs">
+   <a routerLink="app-employees/:id" style="background-color: #17a2b8; color: white;" class="bt" mat-raised-button><mat-icon>chevron_left</mat-icon>Go Back</a>
+ </div>
+</div> -->
+<div class="container">
+   
+    <div class="container my-5"  >
+      <form  [formGroup]="addForms" (ngSubmit)="SaveData()" >
+          <div class="form-group row align-items-center my-2">
+            <div class="col-sm-3 my-1">
+              <label class="sr-only">Global Group ID</label>
+              <input type="number" class="form-control" placeholder="Global Group ID" name="globalGroupId" formControlName="globalGroupId" readonly>
+            </div>
+            <div class="col-sm-3 my-1">
+                <label class="sr-only">Employee No</label>
+                <input readonly type="text" class="form-control" placeholder="Employee No" name="employeeNo" formControlName="employeeNo">
+              </div>
+            <div class="col-sm-3 my-1">
+              <label class="sr-only">Name</label>
+              <input readonly type="text" class="form-control" placeholder="Name" name="name" formControlName="name">
+            </div>
+    
+            <div class="col-sm-3 my-1">
+              <label class="sr-only">Practice</label>
+              <input readonly type="text" class="form-control" placeholder="Practice" name="practice" formControlName="practice">
+            </div>
+    
+            <div class="col-sm-3 my-1">
+              <label class="sr-only">Performance Issue</label>
+              <select class="form-control" name="performanceIssue" formControlName="performanceIssue">
+                 <option value="">--Select--</option>
+                 <option value="yes">Yes</option>
+                 <option value="no">No</option>
+              </select>
+              <!-- <span asp-validation-for="PerformanceIssue" class="text-danger"></span> -->
+             </div>
+    
+    
+    
+          </div>
+    
+          <div class="form-group row align-items-center my-2">
+              <div class="col-sm-3 my-1">
+                  <label class="sr-only">Local Grade</label>
+                  <input readonly type="text" class="form-control" placeholder="Local Grade" name="localGrade" formControlName="localGrade">
+              </div>
+    
+              <div class="col-sm-3 my-1">
+                  <label class="sr-only">Roll Off End Date</label>
+                  <input type="date" class="form-control"  placeholder="rollOffEndDate" name="rollOffEndDate" formControlName="rollOffEndDate">
+              </div>
+    
+              <div class="col-sm-3 my-1">
+                  <label class="sr-only">Resigned</label>
+                  <select class="form-control" name="resigned" formControlName="resigned">
+                     <option value="">--Select--</option>
+                     <option value="yes">Yes</option>
+                     <option value="no">No</option>
+                  </select>
+                  <!-- <span asp-validation-for="PerformanceIssue" class="text-danger"></span> -->
+              </div>
+    
+              <div class="col-sm-3 my-1">
+                  <label class="sr-only">Communication</label>
+                  <input type="text" class="form-control" placeholder="Communication" name="communication" formControlName="communication">
+              </div>
+    
+          </div>
+    
+          <div class="form-group row align-items-center my-2">
+              <div class="col-sm-3 my-1">
+                  <label class="sr-only">Primary Skills</label>
+                  <input type="text" class="form-control" placeholder="Primary Skill" name="primarySkill" formControlName="primarySkill">
+              </div>
+    
+              <div class="col-sm-3 my-1">
+                  <label class="control-label">Reason for Roll Off</label>
+                  <select class="form-control" name="reasonForRollOff" formControlName="reasonForRollOff">
+                      <option value="">--Select--</option>
+                      <option value="Project Closure">Project Closure</option>
+                      <option value="Maternity Leave">Maternity Leave</option>
+                      <option value="Resigned">Resigned</option>
+                      <option value="Performance Issue">Performance Issue</option>
+                      <option value="HR Case"> HR Case</option>
+                      <option value="People Skill">People Skill</option>
+                      <option value="Automation">Automation</option>
+                      <option value="Quality"> Quality</option>
+                      <option value="New Delivery Model">New Delivery Model</option>
+                      <option value="Labour(Work Force Productivity)">Labour(Work Force Productivity)</option>
+                      <option value="Client Budget Issue">Client Budget Issue</option>
+                      <option value="Other Reason">Other Reason</option>
+                  </select>
+                  <!-- <span asp-validation-for="ReasonForRollOff" class="text-danger"></span> -->
+              </div>
+    
+              <div class="col-sm-3 my-1">
+                  <label class="control-label">Under Probation</label>
+                  <select class="form-control" name="underProbation" formControlName="underProbation">
+                      <option value="">--Select--</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                  </select>
+                  <!-- <span asp-validation-for="UnderProbation" class="text-danger"></span> -->
+              </div>
+    
+              <div class="col-sm-3 my-1">
+                  <label class="sr-only">Role Competencies</label>
+                  <input type="text" class="form-control" placeholder="Role Competencies" name="roleCompetencies" formControlName="roleCompetencies">
+              </div>
+    
+          </div>
+    
+          <div class="form-group row align-items-center my-2">
+              <div class="col-sm-3 my-1">
+                  <label class="sr-only">Project Code</label>
+                  <input readonly type="Number" class="form-control" placeholder="Project Code" name="projectCode" formControlName="projectCode">
+              </div>
+    
+              <div class="col-sm-3 my-1">
+                  <label class="sr-only">Technical Skills</label>
+                  <input type="text" class="form-control" placeholder="Technical Skills" name="technicalSkills" formControlName="technicalSkills">
+              </div>
+    
+              <!-- <div class="col-sm-3 my-1">
+                  <label class="sr-only">Other Reasons</label>
+                  <input type="text" class="form-control" placeholder="Other Reasons" name="otherReasons" formControlName="otherReasons">
+              </div> -->
+    
+              <div class="col-sm-3 my-1">
+                  <label class="control-label">Long Leave</label>
+                  <select class="form-control" name="longLeave" formControlName="longLeave">
+                      <option value="">--Select--</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                  </select>
+                  <!-- <span asp-validation-for="LongLeave" class="text-danger"></span> -->
+              </div>
+    
+              <div class="col-sm-3 my-1">
+                  <label class="sr-only">Remarks</label>
+                  <input type="text" class="form-control" placeholder="Remarks" name="remarks" formControlName="remarks">
+              </div>
+          </div>
+    
+          <div class="form-group row align-items-center my-2">
+              <div class="col-sm-3 my-1">
+                <label class="sr-only">Project Name</label>
+                <input readonly type="text" class="form-control" placeholder="Project Name" name="projectName" formControlName="projectName">
+              </div>
+    
+              <div class="col-sm-3 my-1">
+                  <label  for="thisReleaseNeedsBackfillIsBackfilled" class="control-label">This Release Needs Backfilled</label>
+                  <select for="thisReleaseNeedsBackfillIsBackfilled" class="form-control" name="thisReleaseNeedsBackfillIsBackfilled" formControlName="thisReleaseNeedsBackfillIsBackfilled">
+                      <option value="">--Select--</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                  </select>
+                  <!-- <span asp-validation-for="ThisReleaseNeedsBackfillIsBackfilled" class="text-danger"></span> -->
+              </div>
+    
+              <!-- <div class="col-sm-3 my-1">
+                  <label class="control-label">Leave Type</label>
+                  <select class="form-control" name="leaveType" formControllerName="leaveType">
+                      <option value="">--select--</option>
+                      <option value="Privilege Leave">Privilege Leave</option>
+                      <option value="Casual Leave">Casual Leave</option>
+                      <option value="Maternity Leave">Maternity Leave</option>
+                      <option value="Sick Leave">Sick Leave</option>
+                      <option value="Paternity Leave">Paternity Leave</option>
+                  </select> -->
+                  <!-- <span asp-validation-for="LeaveType" class="text-danger"></span> -->
+              <!-- </div> -->
+    
+               <div class="col-sm-3 my-1">
+                <label class="sr-only">Relevant Experience in Years</label>
+                <input type="Number" class="form-control" placeholder="Relevant Experience in Years" name="relevantExperienceYears" formControlName="relevantExperienceYears">
+              </div>
+    
+            </div>
+    
+           <div class="col-auto my-3 mx-2 text-center">
+              <button type="submit" class="btn btn-info">Submit</button>
+          </div>
+         <!-- <div class="col-3">
+            <button type="button" class="btn btn-info" routerLink="/app-view-employee" style="width:fit-content; height: fit-content;">
+                Go Back</button>
+        </div> -->
+
+        <!-- <div class="row d-flex justify-content-center align-content-center">
+            <div class="col-1 d-flex justify-content-end">
+            
+                <button type="button" class="btn btn-info" >Submit</button>
+            </div>
+            <div class="col-3">
+                <button type="button" class="btn btn-info" routerLink="/app-view-employee" style="width:fit-content; height: fit-content;">
+                    Go Back</button>
+            </div>
+        </div> -->
+      </form>
+    </div>
+    
+    </div>
+    <!-- </div>
+    </div>
+    </div> -->
+    

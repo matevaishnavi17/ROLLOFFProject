@@ -1,0 +1,36 @@
+.border{
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    margin-left: 60px;
+    margin-top: 60px;
+    margin-right: 60px;
+    
+}
+.container-tab{
+
+    padding: 2em 0;
+    border-style: solid;
+    border-color: rgb(21, 21, 19);
+  }
+  
+  
+  
+  /* .top-row{
+    padding: 1em 0;
+  }
+  .row-base{
+    margin-left: 15em;
+    line-height: 3em;
+  }
+  #row-top-row{
+    background-color: #17a2b8;
+    color: white;
+    }
+    .bt{
+      width: 200px;
+      background-color: #17a2b8;
+      color: white;
+    }
+   */

@@ -1,0 +1,16 @@
+table{
+    width:100%;
+}
+.search-input{
+    outline: none;
+    border: 1px solid #CCC;
+    padding:10px 15px;
+    border-radius: 3px;
+}
+
+.serach-input:active{
+    border:1px solid #AAA;
+}
+.serach-input:focus{
+    border:1px solid #BBB;
+}
